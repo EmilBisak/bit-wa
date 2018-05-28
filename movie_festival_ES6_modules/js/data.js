@@ -7,7 +7,7 @@ class Festival {
 }
 
 
-const createFestival = () => new Festival();
+export const createFestival = () => new Festival();
 
 const festival = createFestival();
 
@@ -33,13 +33,13 @@ class Movie {
 
 
 
-const createMovie = (title, length, genre) => new Movie(title, length, genre);
+export const createMovie = (title, length, genre) => new Movie(title, length, genre);
 
 
-const addMovie = movie => festival.listOfAllMovies.push(movie) - 1;
+export const addMovie = movie => festival.listOfAllMovies.push(movie) - 1;
 
 
-const isValidateMovie = (title, length, genre) => {
+export const isValidateMovie = (title, length, genre) => {
   if (!title || !genre || !length) {
     return false;
   }
@@ -92,7 +92,7 @@ class Program {
 
 
 
-const isValidProgram = dateString => {
+export const isValidProgram = dateString => {
   if (!dateString) {
     return false;
   }
@@ -109,15 +109,15 @@ const isValidProgram = dateString => {
   return true;
 }
 
-const createProgram = dateString => {
+export const createProgram = dateString => {
   const date = new Date(dateString);
   return new Program(date);
 }
 
-const addProgram = program => festival.listOfPrograms.push(program) - 1;
+export const addProgram = program => festival.listOfPrograms.push(program) - 1;
 
 
-const addMovieToProgram = (movieIndex, programIndex) => {
+export const addMovieToProgram = (movieIndex, programIndex) => {
 
   const movie = festival.listOfAllMovies[movieIndex];
   const program = festival.listOfPrograms[programIndex];
@@ -130,16 +130,3 @@ const addMovieToProgram = (movieIndex, programIndex) => {
     oldProgramData
   };
 }
-
-
-
-export const data = {
-  createFestival,
-  isValidateMovie,
-  createMovie,
-  addMovie,
-  isValidProgram,
-  createProgram,
-  addProgram,
-  addMovieToProgram
-};

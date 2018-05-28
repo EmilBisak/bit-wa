@@ -1,5 +1,5 @@
-import { data } from './data.js';
-import { ui } from './ui.js';
+import * as data from './data.js';
+import * as ui from './ui.js';
 
 
 const setEventListeners = () => {
