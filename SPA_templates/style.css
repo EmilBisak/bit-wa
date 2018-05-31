@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header {
+    background-color: cadetblue;
+    color: #fff;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    padding: 20px 0;
+}
+
+.mouse, .cat {
+    margin: 100px auto;
+    display: table;
+    box-shadow: 2px 2px 20px 2px;
+}
+
+img {
+    margin: 0 auto;
+    display: table;
+}
+
+button {
+    width: 100%;
+}
+
+footer {
+    background-color: tomato;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+    padding: 20px 0;
+
+}
