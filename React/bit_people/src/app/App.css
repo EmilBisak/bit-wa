@@ -1,0 +1,13 @@
+.card-img-wrapper{
+  padding: 24px 10px;
+  
+}
+
+#img {
+  border-radius: 50%;
+}
+
+.icon {
+  position: relative;
+  top: 5px;
+}
